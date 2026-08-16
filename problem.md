@@ -214,7 +214,7 @@ tps verify
 
 To export the problem for CMS, use:
 ```bash
-tps export
+tps export CMS 1
 ```
 
 ## Important links (don't skip)
