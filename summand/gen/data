@@ -1,0 +1,143 @@
+@subtask samples
+manual example-01.in
+
+@subtask st1
+manual st1-boundary.in
+gen1 1 1 1 
+gen1 10 1 2 
+gen1 10 1 3 
+gen1 100 1 4 
+gen1 100 1 5 
+gen1 100 1 6 
+gen1 100 1 7 
+gen1 1000 1 8 
+gen1 1000 1 9 
+gen1 1000 1 10 
+
+
+@subtask st2
+manual st2-boundary.in
+gen1 10 2 1 
+gen1 10 2 2 
+gen1 100 2 3 
+gen1 100 2 4 
+gen1 100 2 5 
+gen1 500 2 6 
+gen1 500 2 7 
+gen1 500 2 8 
+gen1 500 2 9 
+gen1 1000 2 10 
+gen1 1000 2 11 
+gen1 1000 2 12
+gen1 1000 2 13
+gen1 1000 2 14
+gen1 1000 2 15 
+
+@subtask st3
+manual st3-boundary.in
+gen1 100 3 1 
+gen1 100 3 2 
+gen1 100 3 3 
+gen1 500 3 4 
+gen1 500 3 5 
+gen1 500 3 6 
+gen1 500 3 7 
+gen1 500 3 8 
+gen1 1000 3 9 
+gen1 1000 3 10 
+gen1 1000 3 11 
+gen1 1000 3 12
+gen1 1000 3 13
+gen1 1000 3 14
+gen1 1000 3 15
+gen1 1000 3 16
+gen1 1000 3 17
+gen1 1000 3 18
+gen1 1000 3 19
+gen1 1000 3 20
+
+@subtask st4
+manual st4-boundary.in
+gen1 10 4 1 
+gen1 50 4 2 
+gen1 100 4 3 
+gen1 100 4 4 
+gen1 100 4 5 
+gen1 500 4 6 
+gen1 1000 4 7 
+gen1 1000 4 8 
+gen1 1000 4 9 
+gen1 1000 4 10 
+
+@subtask st5
+manual st5-boundary.in
+gen1 100 5 1 
+gen1 100 5 2 
+gen1 500 5 3 
+gen1 500 5 4 
+gen1 1000 5 5 
+gen1 1000 5 6 
+gen1 1000 5 7 
+gen1 1000 5 8 
+gen1 1000 5 9 
+gen1 1000 5 10 
+
+@subtask st6
+manual st6-boundary.in
+gen1 1000 6 1
+gen1 1000 6 2
+gen1 1000 6 3
+gen1 1000 6 4
+gen1 1000 6 5
+gen1 1000 6 6
+gen1 1000 6 7
+gen1 1000 6 8
+gen1 1000 6 9
+gen1 1000 6 10
+gen1 1000 6 11
+gen1 1000 6 12
+gen1 1000 6 13
+gen1 1000 6 14
+gen1 1000 6 15
+gen1 1000 6 16
+gen1 1000 6 17
+gen1 1000 6 18
+gen1 1000 6 19
+gen1 1000 6 20
+ 
+
+@subtask st7
+manual st7-boundary.in
+gen1 1000 7 1
+gen1 1000 7 2
+gen1 1000 7 3
+gen1 1000 7 4
+gen1 1000 7 5
+gen1 1000 7 6
+gen1 1000 7 7
+gen1 1000 7 8
+gen1 1000 7 9
+gen1 1000 7 10
+gen1 1000 7 11
+gen1 1000 7 12
+gen1 1000 7 13
+gen1 1000 7 14
+gen1 1000 7 15
+gen1 1000 7 16
+gen1 1000 7 17
+gen1 1000 7 18
+gen1 1000 7 19
+gen1 1000 7 20
+gen1 1000 7 21
+gen1 1000 7 22
+gen1 1000 7 23
+gen1 1000 7 24
+gen1 1000 7 25
+gen1 1000 7 26
+gen1 1000 7 27
+gen1 1000 7 28
+gen1 1000 7 29
+gen1 1000 7 30
+
+
+

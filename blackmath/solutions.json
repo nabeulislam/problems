@@ -1,0 +1,29 @@
+{
+    "correct1.cpp": { "verdict": "model_solution" },
+    "wrong1.cpp": { "verdict": "incorrect" },
+    "wrong.cpp": { "verdict": "incorrect" },
+    "partial1.cpp": { 
+        "verdict": "time_limit",
+        "except":
+        {
+            "samples":"correct",
+            "1":"correct",
+            "2":"correct",
+            "3":"correct"
+        }
+
+     },
+    "partial2.cpp": { 
+        "verdict": "time_limit",
+        "except":
+        {
+            "samples":"correct",
+            "1":"correct",
+            "2":"correct",
+            "3":"correct",
+            "4":"correct",
+            "5":"correct"
+        }
+
+     }
+}

@@ -1,0 +1,112 @@
+@subtask samples
+manual example-01.in
+
+@subtask 1
+manual small-1.in
+manual sub1-unique.in
+manual manual-boundary-1.in
+manual manual-boundary-2.in
+gen1 1 2
+gen1 1 3
+gen1 1 4
+gen1 1 5
+gen1 1 6
+
+@subtask 2
+manual manual-5000-5000.in
+gen1 2 1
+gen1 2 2
+gen1 2 3
+gen1 2 4
+gen1 2 5
+gen1 2 6
+gen1 2 7
+gen1 2 8
+gen1 2 9
+gen1 2 10
+gen1 2 11
+gen1 2 12
+gen1 2 13
+gen1 2 14
+gen1 2 15
+gen1 2 16
+gen1 2 17
+gen1 2 18
+gen1 2 19
+gen1 2 20
+
+
+@subtask 3
+gen1 3 1
+gen1 3 2
+gen1 3 3
+gen1 3 4
+gen1 3 5
+gen1 3 6
+gen1 3 7
+gen1 3 8
+gen1 3 9
+gen1 3 10
+gen1 3 11
+gen1 3 12
+gen1 3 13
+gen1 3 14
+gen1 3 15
+gen1 3 16
+gen1 3 17
+gen1 3 18
+gen1 3 19
+gen1 3 20
+gen1 3 21
+gen1 3 22
+gen1 3 23
+gen1 3 24
+gen1 3 25
+
+
+
+@subtask 4
+manual max-4.in
+manual hard-5.in
+manual max-6.in
+manual manual-exhaustive-1.in
+manual manual-exhaustive-2.in
+gen1 4 1
+gen1 4 2
+gen1 4 3
+gen1 4 4
+gen1 4 5
+gen1 4 6
+gen1 4 7
+gen1 4 8
+gen1 4 9
+gen1 4 10
+gen1 4 11
+gen1 4 12
+gen1 4 13
+gen1 4 14
+gen1 4 15
+gen1 4 16
+gen1 4 17
+gen1 4 18
+gen1 4 19
+gen1 4 20
+gen1 4 22
+gen1 4 23
+gen1 4 24
+gen1 4 25
+gen1 4 26
+gen1 4 27
+gen1 4 28
+gen1 4 29
+gen1 4 30
+gen1 4 31
+gen1 4 32
+gen1 4 33
+gen1 4 34
+gen1 4 35
+gen1 4 36
+gen1 4 37
+gen1 4 38
+gen1 4 39
+gen1 4 40

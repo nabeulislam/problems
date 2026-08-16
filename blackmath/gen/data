@@ -1,0 +1,115 @@
+@subtask samples
+manual 0-01.in
+manual 0-02.in
+
+@subtask 1
+manual 1-01.in
+gen1 1 2
+gen1 1 3
+gen1 1 4
+gen1 1 5
+
+@subtask 2
+gen1 2 1
+manual 2-01.in
+gen1 2 35
+gen1 2 45
+gen1 2 55
+gen1 2 66
+manual 2-02.in
+
+@subtask 3
+gen1 3 1
+gen1 3 2
+gen1 3 3
+gen1 3 4
+gen1 3 5
+gen1 3 6
+gen1 3 7
+gen1 3 8
+
+@subtask 4
+gen1 4 1
+gen1 4 2
+gen1 4 3
+gen1 4 4
+gen1 4 5
+gen1 4 6
+gen1 4 7
+gen1 4 8
+gen1 4 9
+gen1 4 10
+
+@subtask 5
+gen1 5 1
+gen1 5 2
+gen1 5 3
+gen1 5 4
+gen1 5 5
+gen1 5 6
+gen1 5 7
+gen1 5 8
+gen1 5 9
+gen1 5 10
+gen1 5 11
+gen1 5 12
+gen1 5 13
+gen1 5 14
+gen1 5 15
+gen1 5 16
+gen1 5 17
+gen1 5 18
+gen1 5 19
+gen1 5 20
+gen1 5 21
+gen1 5 22
+gen1 5 23
+gen1 5 24
+gen1 5 25
+gen1 5 26
+gen1 5 27
+gen1 5 28
+gen1 5 29
+gen1 5 30
+
+@subtask 6
+gen1 6 1
+gen1 6 2
+gen1 6 3
+gen1 6 4
+gen1 6 5
+gen1 6 6
+gen1 6 7
+gen1 6 8
+gen1 6 9
+gen1 6 10
+gen1 6 11
+gen1 6 12
+gen1 6 13
+gen1 6 14
+gen1 6 15
+gen1 6 16
+gen1 6 17
+gen1 6 18
+gen1 6 19
+gen1 6 20
+gen1 6 21
+gen1 6 22
+gen1 6 23
+gen1 6 24
+gen1 6 25
+gen1 6 26
+gen1 6 27
+gen1 6 28
+gen1 6 29
+gen1 6 30
+gen1 6 31
+gen1 6 32
+gen1 6 33
+gen1 6 34
+gen1 6 35
+gen1 6 36
+gen1 6 37
+gen1 6 38
+gen1 6 39
+gen1 6 40

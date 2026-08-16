@@ -1,0 +1,255 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{blindtext}
+
+\title{BdOI Monthly Contest  Round1 Solutions: Problem
+Blackout Math}
+\date{} %
+\setlength{\parindent}{0pt}
+
+
+\begin{document}
+
+\maketitle
+
+
+\vspace{0.3cm}
+
+\textbf{\Large Problem Information}
+
+\vspace{0.3cm}
+
+{\large Problem Author: Nabeul Islam}
+
+\vspace{0.3cm}
+
+{\large Problem Preparation: Nabeul Islam}
+
+\vspace{0.3cm}
+
+{\large Editorial: Nabeul Islam}
+
+\vspace{0.3cm}
+
+
+
+\vspace{0.5cm}
+
+\textbf{\Large Subtasks hinting key observations}
+
+\vspace{0.3cm}
+
+\textbf{\large Preliminary Observation:}
+
+The sequence is defined as
+$$F_1 = A$$$$F_2 = B$$$$F_i = F_{i-1} \oplus F_{i-2} \quad \text{for all } i \ge 3$$
+
+Since $N$ can be as large as $10^{18}$, we clearly cannot simulate the recurrence term by term for the full solution within the time constraints. We need to find a efficient solution  to get a full score. However a basic simution will award you the partial points.
+
+\vspace{0.3cm}
+
+\textbf{\large Subtask 1: $N \le 3$}
+\vspace{0.3cm}
+
+This is a very easy subtask. For $N \le2$ we just need need print the first and second number in the sequence depending on the input of $N$. For $N=3$ we just need to print $A \oplus B$.
+
+
+\vspace{0.3cm}
+
+\textbf{\large Subtask 2: $A = 1$ and $B = 1$ and $N \le 10$}
+
+\vspace{0.3cm}
+
+In this subtask , we can simulate $N^{th}$ term in the problem by writing a recursive function. 
+
+\vspace{0.3cm}
+
+\textbf{\large Subtask 3: $N \le 20$}
+\vspace{0.3cm}
+
+same as subtask 2.
+
+\vspace{0.3cm}
+
+\textbf{\large Subtask 4:  $N \le 1000$}
+
+\vspace{0.3cm}
+
+In this subtask , we can simulate $N^{th}$ term in the problem by writing a  recursive function. However, it is not efficient always. It can cause stack overflow and give you error. A simple approach to use a loop to simulate the sequence.
+
+
+\vspace{0.3cm}
+
+\textbf{\large Subtask 5: $N \le 10^5$}
+\vspace{0.3cm}
+
+same as subtask 4.
+
+\vspace{0.3cm}
+
+
+\vspace{0.3cm}
+
+\textbf{\large Subtask 6(Full solution}
+\vspace{0.3cm}
+
+Here $N$ is far too large to simulate directly. If we do some dry runs we will find a pattern. The key property to notice here the functionality and property of the XOR($\oplus$) operator. Two of its important properties we need to notice are $x \oplus x = 0$ and $x \oplus 0 = x$.
+Let's use this to compute a few terms  and see what happens:
+
+$$F_3 = F_2 \oplus F_1 = A \oplus B$$
+$$F_4 = F_3 \oplus F_2 = (A \oplus B) \oplus B = A \oplus (B \oplus B) = A$$
+$$F_5 = F_4 \oplus F_3 = A \oplus (A \oplus B) = (A \oplus A) \oplus B = B$$
+$$F_6 = F_5 \oplus F_4 = B \oplus A = A \oplus B$$
+$$F_7 = F_6 \oplus F_5 = (A \oplus B) \oplus B = A \oplus (B \oplus B) = A$$
+
+Turns out the There is a repeated sequence throughout the terms, we can take this advantange to Optimize our solution.
+
+This pattern repeats in every 3 sequence! 
+
+The sequence is periodic with period 3, cycling through $A, B\documentclass[12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{blindtext}
+
+\title{BdOI Monthly Contest  Round1 Solutions: Problem
+Blackout Math}
+\date{} %
+\setlength{\parindent}{0pt}
+
+
+\begin{document}
+
+\maketitle
+
+
+\vspace{0.3cm}
+
+\textbf{\Large Problem Information}
+
+\vspace{0.3cm}
+
+{\large Problem Author: Nabeul Islam}
+
+\vspace{0.3cm}
+
+{\large Problem Preparation: Nabeul Islam}
+
+\vspace{0.3cm}
+
+{\large Editorial: Nabeul Islam}
+
+\vspace{0.3cm}
+
+
+
+\vspace{0.5cm}
+
+\textbf{\Large Subtasks hinting key observations}
+
+\vspace{0.3cm}
+
+\textbf{\large Preliminary Observation:}
+
+The sequence is defined as
+$$F_1 = A$$$$F_2 = B$$$$F_i = F_{i-1} \oplus F_{i-2} \quad \text{for all } i \ge 3$$
+
+Since $N$ can be as large as $10^{18}$, we clearly cannot simulate the recurrence term by term for the full solution within the time constraints. We need to find a efficient solution  to get a full score. However a basic simution will award you the partial points.
+
+\vspace{0.3cm}
+
+\textbf{\large Subtask 1: $N \le 3$}
+\vspace{0.3cm}
+
+This is a very easy subtask. For $N \le2$ we just need need print the first and second number in the sequence depending on the input of $N$. For $N=3$ we just need to print $A \oplus B$.
+
+
+\vspace{0.3cm}
+
+\textbf{\large Subtask 2: $A = 1$ and $B = 1$ and $N \le 10$}
+
+\vspace{0.3cm}
+
+In this subtask , we can simulate $N^{th}$ term in the problem by writing a recursive function. 
+
+\vspace{0.3cm}
+
+\textbf{\large Subtask 3: $N \le 20$}
+\vspace{0.3cm}
+
+same as subtask 2.
+
+\vspace{0.3cm}
+
+\textbf{\large Subtask 4:  $N \le 1000$}
+
+\vspace{0.3cm}
+
+In this subtask , we can simulate $N^{th}$ term in the problem by writing a  recursive function. However, it is not efficient always. It can cause stack overflow and give you error. A simple approach to use a loop to simulate the sequence.
+
+
+\vspace{0.3cm}
+
+\textbf{\large Subtask 5: $N \le 10^5$}
+\vspace{0.3cm}
+
+same as subtask 4.
+
+\vspace{0.3cm}
+
+
+\vspace{0.3cm}
+
+\textbf{\large Subtask 6(Full solution)}
+\vspace{0.3cm}
+
+Here $N$ is far too large to simulate directly. If we do some dry runs we will find a pattern. The key property to notice here the functionality and property of the XOR($\oplus$) operator. Two of its important properties we need to notice are $x \oplus x = 0$ and $x \oplus 0 = x$.
+Let's use this to compute a few terms  and see what happens:
+
+$$F_3 = F_2 \oplus F_1 = A \oplus B$$
+$$F_4 = F_3 \oplus F_2 = (A \oplus B) \oplus B = A \oplus (B \oplus B) = A$$
+$$F_5 = F_4 \oplus F_3 = A \oplus (A \oplus B) = (A \oplus A) \oplus B = B$$
+$$F_6 = F_5 \oplus F_4 = B \oplus A = A \oplus B$$
+$$F_7 = F_6 \oplus F_5 = (A \oplus B) \oplus B = A \oplus (B \oplus B) = A$$
+
+Turns out the There is a repeated sequence throughout the terms, we can take this advantange to Optimize our solution.
+
+This pattern repeats in every 3 sequence! 
+
+The sequence is periodic with period 3, cycling through $A, B, A \oplus B,
+A, B, A \oplus B, \dots$ forever. 
+
+With this simple oveservation our problem simplifies to the idea below:
+
+ 
+$$F_N = \begin{cases}
+ A & \text{if } N \bmod 3 = 1 \\ 
+ B & \text{if } N \bmod 3 = 2 \\ 
+ A \oplus B & \text{if } N \bmod 3 = 0 
+\end{cases}$$
+
+ This reduces the time complexity and gives a solution that score full points. 
+ 
+
+\vspace{0.3cm}
+
+
+\end{document}, A \oplus B,
+A, B, A \oplus B, \dots$ forever. 
+
+With this simple oveservation our problem simplifies to the idea below:
+
+ 
+$$F_N = \begin{cases}
+ A & \text{if } N \bmod 3 = 1 \\ 
+ B & \text{if } N \bmod 3 = 2 \\ 
+ A \oplus B & \text{if } N \bmod 3 = 0 
+\end{cases}$$
+
+ This reduces the time complexity and gives a solution that score full points. 
+ 
+
+\vspace{0.3cm}
+
+
+\end{document}

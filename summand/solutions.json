@@ -1,0 +1,32 @@
+{
+    "correct1.cpp": { "verdict": "model_solution" },
+    "50.cpp": { "verdict": "partially_correct" },
+    "brute.cpp": {
+         "verdict": "time_limit",
+         "except":
+         {
+            "samples": "correct",
+            "st1": "correct",
+            "st2": "correct",
+            "st3": "correct",
+            "st4": "correct",
+            "st5": "correct"
+         }
+
+     },
+    "brute50.cpp": {
+         "verdict": "time_limit",
+         "except":
+         {
+            "samples": "partially_correct",
+            "st1": "partially_correct",
+            "st2": "partially_correct",
+            "st3": "partially_correct",
+            "st4": "partially_correct",
+            "st5": "partially_correct"
+         }
+
+     }
+    
+
+}
